@@ -1,0 +1,96 @@
+
+body{
+	background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.desplay-section{
+	margin-top: 10px;
+}
+
+.control-section button, .control-section select{
+	color:black;
+}
+
+img{
+	display: block;
+	margin: auto;
+	height:30%;
+	width: 30%;
+}
+
+iframe{
+	width: 80%;
+	background-color: white;
+	border: calc(8px + 0.2vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 20px 20px 20px 20px;
+	border-color: #fffc00;
+} 
+
+/*Ribbon*/
+.nav-items-container ul.nav-items-list {
+    margin:0;
+    padding: 0;
+    height: 30px;
+    overflow: hidden;
+}
+
+.nav-items-container ul.nav-items-list li {
+    display: inline-block;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-items-container ul.nav-items-list li > a {
+	color: yellow;
+	font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 7px 30px;
+}
+
+.nav-items-container ul.nav-items-list li:hover > a,
+.nav-items-container ul.nav-items-list li:focus > a {
+    text-decoration: none;
+}
+
+.nav-items-container ul.nav-items-list li.active > a {
+background-color: #e8eb67;
+		color:black;
+		cursor: default;
+}
+
+.tab-content .ribbon-bar-tab {
+    overflow: hidden;
+    background-color: transparent;
+    padding: 10px;
+    height: 0;
+    opacity: 0;
+}
+
+.tab-content .ribbon-bar-tab.slide-out {
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+background-color: #e8eb67;
+		color:black;
+}
+
+.tab-content .ribbon-bar-tab.showing {
+		color:black;
+    height: 100%;
+    opacity: 1;
+background-color: #e8eb67;
+}
